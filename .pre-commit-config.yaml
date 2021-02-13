@@ -1,0 +1,23 @@
+fail_fast: true
+repos:
+  - repo: local
+    hooks:
+      - id: black
+        name: black
+        entry: poetry run black .
+        pass_filenames: false
+        language: system
+  - repo: local
+    hooks:
+      - id: isort
+        name: isort
+        entry: poetry run isort .
+        pass_filenames: false
+        language: system
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: poetry run pylint src/ppt
+        pass_filenames: false
+        language: system
