@@ -33,3 +33,4 @@ Useful links, repos, etc.:
 - https://github.com/psf/black
 - https://github.com/sourcery-ai/python-best-practices-cookiecutter
 - https://github.com/audreyfeldroy/cookiecutter-pypackage
+- https://github.com/johanvergeer/cookiecutter-poetry
