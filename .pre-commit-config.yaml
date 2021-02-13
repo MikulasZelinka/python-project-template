@@ -18,6 +18,6 @@ repos:
     hooks:
       - id: pylint
         name: pylint
-        entry: poetry run pylint src/ppt
+        entry: poetry run pylint src/ppt tests
         pass_filenames: false
         language: system
