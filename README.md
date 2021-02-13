@@ -32,3 +32,4 @@ Useful links, repos, etc.:
 - https://github.com/huggingface/transformers
 - https://github.com/psf/black
 - https://github.com/sourcery-ai/python-best-practices-cookiecutter
+- https://github.com/audreyfeldroy/cookiecutter-pypackage
