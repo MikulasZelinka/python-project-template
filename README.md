@@ -22,6 +22,7 @@ ppt – python project template
 - formalise [setup](#setup) (makefile?)
 - [cut this into cookies](https://github.com/cookiecutter/cookiecutter)?
 - integrate into an IDE (PyCharm)
+- GitHub actions
 
 ## resources
 
@@ -30,3 +31,4 @@ Useful links, repos, etc.:
 - https://github.com/pronovic/apologies
 - https://github.com/huggingface/transformers
 - https://github.com/psf/black
+- https://github.com/sourcery-ai/python-best-practices-cookiecutter
