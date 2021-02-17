@@ -30,7 +30,7 @@ Useful links, repos, etc.:
 
 - https://github.com/pronovic/apologies
 - https://github.com/huggingface/transformers
-- https://github.com/psf/black
+- https://github.com/psf/black, [compatible configs](https://github.com/psf/black/tree/master/docs/compatible_configs)
 - https://github.com/sourcery-ai/python-best-practices-cookiecutter
 - https://github.com/audreyfeldroy/cookiecutter-pypackage
 - https://github.com/johanvergeer/cookiecutter-poetry
