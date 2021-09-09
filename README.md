@@ -1,4 +1,4 @@
-# ppt – python project template
+# python project template
 
 A minimal, slightly opinionated template for Python projects.
 
@@ -67,11 +67,10 @@ Additional resources:
 
 - https://blog.guilatrova.dev/how-to-log-in-python-like-a-pro/
 
+---
+
 ## todo
 
-- [cookiecutter]
-    - ideally, make this into a cookiecutter template
-      (or at least have that as a version, perhaps it's a bit clearer without the template)
 - [coverage]
 - [mypy]
 - [sphinx] ([Read the Docs]) for automatic documentation generation
@@ -83,13 +82,19 @@ Additional resources:
     - e.g., run the (pre-)commit checks there
 - ~~logging template~~
     - likely not needed thanks to the [loguru] preference over the standard python `logging` module
+- [cookiecutter]
+    - consider turing this into a cookiecutter template
+      (or at least have that as a version, perhaps it's a bit clearer without the template)
+    - examples:
+        - https://github.com/johanvergeer/cookiecutter-poetry
+        - https://github.com/audreyfeldroy/cookiecutter-pypackage
+        - https://github.com/sourcery-ai/python-best-practices-cookiecutter
 
-Useful links for reference/TODO purposes:
+### References
 
 - https://github.com/pronovic/apologies
-- https://github.com/johanvergeer/cookiecutter-poetry
-- https://github.com/audreyfeldroy/cookiecutter-pypackage
-- https://github.com/sourcery-ai/python-best-practices-cookiecutter
+- https://github.com/rochacbruno/python-project-template
+
 
 [poetry]: https://github.com/python-poetry/poetry
 [black]: https://github.com/psf/black
