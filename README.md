@@ -4,20 +4,23 @@ ppt – python project template
 
 ## setup
 
-`poetry install`
+1. Install poetry and `cd` to this folder.
 
-`poetry run pre-commit install`
+2. `poetry install`
+
+3. `poetry run pre-commit install`
 
 ## approach
 
 - poetry as the main package manager/runner
 - black, isort (code formatting)
-- pylint (linting)
+- flake8 (linting)
 - pre-commit (to automatically run all the above)
-- coverage (to monitor test coverage)
 
 ## todo
 
+- logging template
+- python comment style
 - coverage
 - formalise [setup](#setup) (makefile?)
 - [cut this into cookies](https://github.com/cookiecutter/cookiecutter)?
