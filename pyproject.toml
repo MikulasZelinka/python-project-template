@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "ppt"
+name = "python-project-template"
 version = "0.1.0"
-description = "ppt – python project template"
+description = "python project template"
 authors = ["Mikuláš Zelinka <mikulas@zelinka.dev>"]
 
 [tool.poetry.dependencies]
