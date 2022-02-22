@@ -120,20 +120,19 @@ Additional resources:
 
 - [x] [mypy]
 - [ ] [tox] with [conda support](https://github.com/tox-dev/tox-conda)
+  - Testing different major Python versions  + OSs is already supported even without `tox`
 - [x] [GitHub Actions]
-  - [ ] Only run when necessary and also cache:
-    - [ ] conda
-    - [ ] poetry
+  - [x] Only run when necessary and also cache:
+    - [x] conda packages
+    - [ ] pip packages
+    - [ ] conda envs
+    - [ ] poetry installation
   - [x] Multiplatform support (`conda init` and similar on Win/MacOS)
 - [ ] [coverage]
 - [ ] [sphinx] ([Read the Docs]) for automatic documentation generation
 - [ ] Decide on `tests` structure: top-level vs scattered across the repo
 - [ ] spellchecker ([codespell](https://github.com/codespell-project/codespell)?)
-- [ ] [poetry] IDE support:
-    - [PyCharm plugin](https://plugins.jetbrains.com/plugin/14307-poetry),
-      [official ticket](https://youtrack.jetbrains.com/issue/PY-30702)
-- GitHub actions (CI)
-    - e.g., run the (pre-)commit checks there
+- [x] [poetry] is [already supported in PyCharm](https://www.jetbrains.com/help/pycharm/poetry.html)
 - ~~logging template~~
     - likely not needed thanks to the [loguru] preference over the standard python `logging` module
 - [cookiecutter]
