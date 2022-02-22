@@ -9,7 +9,6 @@ jobs:
     - uses: conda-incubator/setup-miniconda@v2
       with:
         python-version: "3.10"
-        auto-activate-base: false
         activate-environment: python-project-template
         environment-file: conda/python-project-template.yaml
     - name: Install poetry
