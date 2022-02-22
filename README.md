@@ -118,11 +118,10 @@ Additional resources:
 
 ## TODO
 
-- [ ] [mypy]
+- [x] [mypy]
 - [ ] [tox] with [conda support](https://github.com/tox-dev/tox-conda)
 - [ ] [GitHub Actions]
 - [ ] [coverage]
-- [ ] [mypy]
 - [ ] [sphinx] ([Read the Docs]) for automatic documentation generation
 - [ ] Decide on `tests` structure: top-level vs scattered across the repo
 - [ ] spellchecker ([codespell](https://github.com/codespell-project/codespell)?)

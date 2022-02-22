@@ -13,6 +13,7 @@ isort = "^5.10.1"
 pre-commit = "^2.17.0"
 pyproject-flake8 = "^0.0.1-alpha.2"
 pytest = "^7.0.0"
+mypy = "^0.931"
 
 [tool.black]
 line-length = 120
@@ -26,6 +27,10 @@ extend-ignore = "E203"
 
 [tool.isort]
 profile = "black"
+
+[tool.mypy]
+# disallow_untyped_defs = true
+# ignore_missing_imports = false
 
 [tool.pytest.ini_options]
 testpaths = [
