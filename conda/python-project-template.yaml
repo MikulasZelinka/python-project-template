@@ -1,0 +1,6 @@
+name: python-project-template
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+prefix: python-project-template

@@ -1,22 +1,22 @@
 [tool.poetry]
 name = "python-project-template"
 version = "0.1.0"
-description = "python project template"
+description = "Python project template"
 authors = ["Mikuláš Zelinka <mikulas@zelinka.dev>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10"
 
 [tool.poetry.dev-dependencies]
-black = "^21.8b0"
-isort = "^5.9.3"
-pre-commit = "^2.15.0"
+black = "^22.1.0"
+isort = "^5.10.1"
+pre-commit = "^2.17.0"
 pyproject-flake8 = "^0.0.1-alpha.2"
-pytest = "^6.2.5"
+pytest = "^7.0.0"
 
 [tool.black]
 line-length = 120
-target-version = ['py39']
+target-version = ['py310']
 include = '\.py$'
 exclude = ''
 
