@@ -121,8 +121,10 @@ Additional resources:
 - [x] [mypy]
 - [ ] [tox] with [conda support](https://github.com/tox-dev/tox-conda)
 - [x] [GitHub Actions]
-  - [ ] Caching (conda and poetry)
-  - [ ] Multiplatform support (`conda init` and similar on Win/MacOS)
+  - [ ] Only run when necessary and also cache:
+    - [ ] conda
+    - [ ] poetry
+  - [x] Multiplatform support (`conda init` and similar on Win/MacOS)
 - [ ] [coverage]
 - [ ] [sphinx] ([Read the Docs]) for automatic documentation generation
 - [ ] Decide on `tests` structure: top-level vs scattered across the repo
