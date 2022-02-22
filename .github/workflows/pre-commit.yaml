@@ -9,18 +9,13 @@ jobs:
     - name: Install conda env
       run: |
         # $CONDA is an environment variable pointing to the root of the miniconda directory
-        $CONDA/bin/conda env create -f conda/python-project-template.yaml
-        conda env list
+        $CONDA/bin/conda env update --name base --file conda/python-project-template.yaml --prune
     - name: Install poetry
       run: |
-        $CONDA/bin/conda activate python-project-template
         curl -sSL https://install.python-poetry.org | python3 -
     - name: Using conda and poetry, install the package
       run: |
-        $CONDA/bin/conda activate python-project-template
-        cd ${{ github.workspace }} && poetry install && poetry install pre-commit
+        poetry install && poetry install pre-commit
     - name: Run all pre-commit tests
       run: |
-        pwd
-        $CONDA/bin/conda activate python-project-template
-        cd ${{ github.workspace }} && poetry run pre-commit
+        poetry run pre-commit
