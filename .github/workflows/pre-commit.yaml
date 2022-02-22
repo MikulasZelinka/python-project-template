@@ -19,10 +19,8 @@ jobs:
         auto-activate-base: false
         activate-environment: python-project-template
         environment-file: conda/python-project-template.yaml
-    - name: Install poetry
-      run: |
-        conda env list
-        curl -sSL https://install.python-poetry.org | python3 -
+    - name: Install and configure Poetry
+      uses: snok/install-poetry@v1
     - name: Using conda and poetry, install the package
       run: |
         poetry install
