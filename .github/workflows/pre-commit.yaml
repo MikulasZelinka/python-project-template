@@ -18,7 +18,20 @@ jobs:
       run: |
         eval "$(command conda 'shell.bash' 'hook' 2> /dev/null)"
         conda activate python-project-template
-        poetry install && poetry install pre-commit
+        poetry install
+        poetry --version
+    - name: Check installed packages (both conda and poetry/pip)
+      run: |
+        eval "$(command conda 'shell.bash' 'hook' 2> /dev/null)"
+        conda activate python-project-template
+        poetry env info
+        conda list
+        pip list
+    - name: Install pre-commit
+      run: |
+        eval "$(command conda 'shell.bash' 'hook' 2> /dev/null)"
+        conda activate python-project-template
+        poetry run pre-commit install
     - name: Run all pre-commit tests
       run: |
         eval "$(command conda 'shell.bash' 'hook' 2> /dev/null)"
