@@ -12,35 +12,21 @@ jobs:
         auto-activate-base: false
         activate-environment: python-project-template
         environment-file: conda/python-project-template.yaml
-
-#    - name: Install conda env
-#      run: |
-#        $CONDA/bin/conda env create -f conda/python-project-template.yaml
     - name: Install poetry
       run: |
-#        eval "$(command conda 'shell.bash' 'hook' 2> /dev/null)"
-#        conda activate python-project-template
         curl -sSL https://install.python-poetry.org | python3 -
     - name: Using conda and poetry, install the package
       run: |
-#        eval "$(command conda 'shell.bash' 'hook' 2> /dev/null)"
-#        conda activate python-project-template
         poetry install
         poetry --version
     - name: Check installed packages (both conda and poetry/pip)
       run: |
-#        eval "$(command conda 'shell.bash' 'hook' 2> /dev/null)"
-#        conda activate python-project-template
         poetry env info
         conda list
         pip list
     - name: Install pre-commit
       run: |
-#        eval "$(command conda 'shell.bash' 'hook' 2> /dev/null)"
-#        conda activate python-project-template
         poetry run pre-commit install
     - name: Run all pre-commit tests
       run: |
-#        eval "$(command conda 'shell.bash' 'hook' 2> /dev/null)"
-#        conda activate python-project-template
         poetry run pre-commit run --all-files
