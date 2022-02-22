@@ -8,14 +8,19 @@ jobs:
     - uses: actions/checkout@v2
     - name: Install conda env
       run: |
-        # $CONDA is an environment variable pointing to the root of the miniconda directory
-        $CONDA/bin/conda env update --name base --file conda/python-project-template.yaml --prune
+        $CONDA/bin/conda env create -f conda/python-project-template.yaml
     - name: Install poetry
       run: |
+        eval "$(command conda 'shell.bash' 'hook' 2> /dev/null)"
+        conda activate python-project-template
         curl -sSL https://install.python-poetry.org | python3 -
     - name: Using conda and poetry, install the package
       run: |
+        eval "$(command conda 'shell.bash' 'hook' 2> /dev/null)"
+        conda activate python-project-template
         poetry install && poetry install pre-commit
     - name: Run all pre-commit tests
       run: |
+        eval "$(command conda 'shell.bash' 'hook' 2> /dev/null)"
+        conda activate python-project-template
         poetry run pre-commit
