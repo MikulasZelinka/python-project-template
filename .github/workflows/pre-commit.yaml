@@ -36,4 +36,4 @@ jobs:
       run: |
         eval "$(command conda 'shell.bash' 'hook' 2> /dev/null)"
         conda activate python-project-template
-        poetry run pre-commit
+        poetry run pre-commit run --all-files
